@@ -113,6 +113,8 @@ sed -e "s/__NAME__/$NAME/g" \
     -e "s/__RELEASE__/$RELEASE/g" \
     -e "s/__SOURCE0__/$IMAGE/g" \
     -e "s/__SOURCE1__/$METADATA/g" \
+    -e "s/__SOURCE2__/$PACKAGES/g" \
+    -e "s/__SOURCE3__/$IMAGE_DIR/image.changes/g" \
     -e "s/__SLE_VERSION__/$SUSE_VERSION/g" \
     -e "s/__SUSE_VERSION__/$SUSE_VERSION/g" \
     -e "s/__SUSE_PRODUCT_NAME__/$SUSE_PRODUCT_NAME/g" \
