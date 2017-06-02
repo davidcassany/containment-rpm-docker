@@ -61,7 +61,7 @@ shopt -s extglob
 
 IMAGE=$(echo ${PREFIX}*${SUFFIX})
 METADATA=$(echo ${PREFIX}.metadata)
-CHANGES==$(echo ${PREFIX}.changes)
+CHANGES=$(echo ${PREFIX}.changes)
 PACKAGES=$(echo ${PREFIX}*.packages)
 
 if [ -z "$IMAGE" ]; then
