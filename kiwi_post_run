@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 : ${TOPDIR:=/usr/src/packages}
 
@@ -172,5 +172,5 @@ rpmbuild -ba $BUILD_DIR/image.spec
 mkdir -p $TOPDIR/OTHER
 mv $TOPDIR/RPMS/$ARCH/$NAME-$VERSION-$RELEASE.$ARCH.rpm $TOPDIR/OTHER/
 mv $TOPDIR/SRPMS/$NAME-$VERSION-$RELEASE.src.rpm $TOPDIR/OTHER/
-#cp $BUILD_DIR/$CHANGES $TOPDIR/KIWI/$CHANGES
+cp $IMAGE_DIR/$CHANGES $TOPDIR/KIWI.bundle
 
